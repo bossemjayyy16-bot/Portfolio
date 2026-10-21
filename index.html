@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAYAN, MIA L. | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="#home" class="logo">MIA<span>.</span></a>
+
+    <button class="menu-button" id="menuButton"
+            aria-label="Open navigation menu"
+            aria-expanded="false">☰</button>
+
+    <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="theme-button" id="themeButton"
+            aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <div class="hero-photo">
+            <img src="IMG_2254.jpeg" alt="My profile picture">
+        </div>
+
+        <div class="hero-content">
+            <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+            <h1>Hello, I'm <span>JAYAN, MIA L.</span></h1>
+            <h2>IT Student &amp; Future Developer</h2>
+
+            <p class="intro">
+                Welcome to my personal portfolio. This website showcases
+                my skills, school projects, interests, and learning journey
+                in Information Technology.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="button primary">View My Projects</a>
+                <a href="#contact" class="button secondary">Say Hello</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="about">
+        <p class="eyebrow">GET TO KNOW ME</p>
+        <h2>About Me</h2>
+        <p>
+            Hi! I'm JAYAN, MIA L., a second-year BSIT student.
+            I am learning web development and exploring how to create
+            useful, creative, and user-friendly websites.
+        </p>
+    </section>
+
+    <section class="content-section" id="skills">
+        <p class="eyebrow">WHAT I'M LEARNING</p>
+        <h2>My Skills</h2>
+
+        <div class="skill-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Web Design</span>
+            <span>Multimedia</span>
+            <span>Computer Programming</span>
+        </div>
+    </section>
+
+    <section class="content-section" id="projects">
+        <p class="eyebrow">MY SCHOOL WORK</p>
+        <h2>My Projects</h2>
+
+        <div class="project-grid">
+            <article class="project-card">
+                <img src="IMG_2254.jpeg" alt="Class schedule project">
+                <h3>Class Schedule</h3>
+                <p>An HTML table showing my class schedule.</p>
+            </article>
+
+            <article class="project-card">
+                <div class="project-icon">HTML</div>
+                <h3>Inline &amp; Block</h3>
+                <p>A demonstration of inline and block elements.</p>
+            </article>
+
+            <article class="project-card">
+                <div class="project-icon">♫</div>
+                <h3>Multimedia</h3>
+                <p>A webpage with video and audio elements.</p>
+            </article>
+
+            <article class="project-card">
+                <img src="IMG_2259.jpeg" alt="Transform project">
+                <h3>Transform &amp; Transition</h3>
+                <p>A CSS project exploring transform effects.</p>
+            </article>
+
+            <article class="project-card">
+                <img src="IMG_2251.jpeg" alt="Teachers Day project">
+                <h3>Teachers' Day</h3>
+                <p>A special webpage dedicated to our teachers.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="content-section contact-section" id="contact">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Contact Me</h2>
+        <p>Thank you for visiting my portfolio!</p>
+        <a class="button primary" href="mailto:your-email@example.com">
+            Send Me an Email
+        </a>
+        <p class="small-note">
+            Palitan ang email address sa code ng sarili mong email.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 My Portfolio | Created by JAYAN, MIA L.</p>
+</footer>
+
+<script>
+    const menuButton = document.getElementById("menuButton");
+    const navMenu = document.getElementById("navMenu");
+    const themeButton = document.getElementById("themeButton");
+
+    menuButton.addEventListener("click", function () {
+        navMenu.classList.toggle("show");
+        const isOpen = navMenu.classList.contains("show");
+        menuButton.setAttribute("aria-expanded", isOpen);
+        menuButton.textContent = isOpen ? "✕" : "☰";
+    });
+
+    navMenu.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+            navMenu.classList.remove("show");
+            menuButton.textContent = "☰";
+            menuButton.setAttribute("aria-expanded", "false");
+        });
+    });
+
+    themeButton.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+        themeButton.textContent =
+            document.body.classList.contains("dark-mode") ? "☀" : "☾";
+    });
+</script>
+
+</body>
+</html>
