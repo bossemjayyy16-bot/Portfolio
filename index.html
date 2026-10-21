@@ -2,159 +2,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JAYAN, MIA L. | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JAYAN, MIA L. | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="navbar">
-    <a href="#home" class="logo">MIA<span>.</span></a>
-
-    <button class="menu-button" id="menuButton"
-            aria-label="Open navigation menu"
-            aria-expanded="false">☰</button>
-
-    <nav id="navMenu">
-        <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+  <header class="navbar">
+    <a class="logo" href="#home">JM<span>.</span></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
+  </header>
 
-    <button class="theme-button" id="themeButton"
-            aria-label="Toggle dark mode">☾</button>
-</header>
-
-<main>
+  <main>
     <section class="hero" id="home">
-        <div class="hero-photo">
-            <img src="IMG_2254.jpeg" alt="My profile picture">
-        </div>
+      <div class="profile-frame">
+        <img src="IMG_0290.jpeg" alt="Profile picture of Jayan Mia L.">
+      </div>
 
-        <div class="hero-content">
-            <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
-            <h1>Hello, I'm <span>JAYAN, MIA L.</span></h1>
-            <h2>IT Student &amp; Future Developer</h2>
+      <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+      <h1>Hello, I'm <span>JAYAN, MIA L.</span></h1>
+      <h2>IT Student & Future Developer</h2>
+      <p class="intro">
+        Welcome to my personal portfolio! This website showcases
+        my school activities, HTML and CSS projects, skills, and
+        learning journey in Information Technology.
+      </p>
 
-            <p class="intro">
-                Welcome to my personal portfolio. This website showcases
-                my skills, school projects, interests, and learning journey
-                in Information Technology.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#projects" class="button primary">View My Projects</a>
-                <a href="#contact" class="button secondary">Say Hello</a>
-            </div>
-        </div>
+      <div class="hero-buttons">
+        <a class="btn primary" href="#projects">View My Projects</a>
+        <a class="btn secondary" href="#contact">Say Hello</a>
+      </div>
     </section>
 
-    <section class="content-section" id="about">
-        <p class="eyebrow">GET TO KNOW ME</p>
-        <h2>About Me</h2>
+    <section class="section about" id="about">
+      <p class="eyebrow">GET TO KNOW ME</p>
+      <h2>About <span>Me</span></h2>
+      <div class="about-card">
+        <h3>Hello! Welcome to my website.</h3>
         <p>
-            Hi! I'm JAYAN, MIA L., a second-year BSIT student.
-            I am learning web development and exploring how to create
-            useful, creative, and user-friendly websites.
+          I am an Information Technology student who is learning
+          how to create websites using HTML and CSS. I enjoy
+          exploring new ideas, creating school projects, and
+          improving my computer skills.
         </p>
+      </div>
     </section>
 
-    <section class="content-section" id="skills">
-        <p class="eyebrow">WHAT I'M LEARNING</p>
-        <h2>My Skills</h2>
-
-        <div class="skill-list">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Web Design</span>
-            <span>Multimedia</span>
-            <span>Computer Programming</span>
-        </div>
+    <section class="section" id="skills">
+      <p class="eyebrow">WHAT I AM LEARNING</p>
+      <h2>My <span>Skills</span></h2>
+      <div class="skill-list">
+        <div class="skill-card"><span>01</span><h3>HTML</h3><p>Creating web page structures</p></div>
+        <div class="skill-card"><span>02</span><h3>CSS</h3><p>Styling and designing websites</p></div>
+        <div class="skill-card"><span>03</span><h3>Multimedia</h3><p>Adding images, video, and audio</p></div>
+        <div class="skill-card"><span>04</span><h3>Creativity</h3><p>Designing school projects</p></div>
+      </div>
     </section>
 
-    <section class="content-section" id="projects">
-        <p class="eyebrow">MY SCHOOL WORK</p>
-        <h2>My Projects</h2>
+    <section class="section projects" id="projects">
+      <p class="eyebrow">MY SCHOOL ACTIVITIES</p>
+      <h2>My <span>Projects</span></h2>
+      <p class="section-intro">Here are some of my HTML and CSS activities.</p>
 
-        <div class="project-grid">
-            <article class="project-card">
-                <img src="IMG_2254.jpeg" alt="Class schedule project">
-                <h3>Class Schedule</h3>
-                <p>An HTML table showing my class schedule.</p>
-            </article>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-art schedule-art">📚</div>
+          <div class="project-info">
+            <p class="tag">HTML TABLE</p>
+            <h3>Class Schedule</h3>
+            <p>A class schedule presented using an HTML table.</p>
+            <a href="#schedule">View project ↓</a>
+          </div>
+        </article>
 
-            <article class="project-card">
-                <div class="project-icon">HTML</div>
-                <h3>Inline &amp; Block</h3>
-                <p>A demonstration of inline and block elements.</p>
-            </article>
+        <article class="project-card">
+          <div class="project-art inline-art"><span>INLINE</span><span>BLOCK</span></div>
+          <div class="project-info">
+            <p class="tag">HTML BASICS</p>
+            <h3>Inline and Block</h3>
+            <p>Examples of inline and block HTML elements.</p>
+            <a href="#inline-block">View project ↓</a>
+          </div>
+        </article>
 
-            <article class="project-card">
-                <div class="project-icon">♫</div>
-                <h3>Multimedia</h3>
-                <p>A webpage with video and audio elements.</p>
-            </article>
+        <article class="project-card">
+          <div class="project-art multimedia-art">▶ ♫</div>
+          <div class="project-info">
+            <p class="tag">HTML MEDIA</p>
+            <h3>Multimedia Page</h3>
+            <p>A sample page with video and audio controls.</p>
+            <a href="#multimedia">View project ↓</a>
+          </div>
+        </article>
 
-            <article class="project-card">
-                <img src="IMG_2259.jpeg" alt="Transform project">
-                <h3>Transform &amp; Transition</h3>
-                <p>A CSS project exploring transform effects.</p>
-            </article>
+        <article class="project-card">
+          <div class="project-art transform-art"><div>BOX</div></div>
+          <div class="project-info">
+            <p class="tag">CSS EFFECTS</p>
+            <h3>Transform & Transition</h3>
+            <p>Move, rotate, and scale a box with CSS effects.</p>
+            <a href="#transform">View project ↓</a>
+          </div>
+        </article>
 
-            <article class="project-card">
-                <img src="IMG_2251.jpeg" alt="Teachers Day project">
-                <h3>Teachers' Day</h3>
-                <p>A special webpage dedicated to our teachers.</p>
-            </article>
-        </div>
+        <article class="project-card">
+          <div class="project-art teachers-art">💐</div>
+          <div class="project-info">
+            <p class="tag">SPECIAL DAY</p>
+            <h3>Teachers' Day</h3>
+            <p>A simple appreciation page for our teachers.</p>
+            <a href="#teachers-day">View project ↓</a>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section class="content-section contact-section" id="contact">
-        <p class="eyebrow">LET'S CONNECT</p>
-        <h2>Contact Me</h2>
-        <p>Thank you for visiting my portfolio!</p>
-        <a class="button primary" href="mailto:your-email@example.com">
-            Send Me an Email
-        </a>
-        <p class="small-note">
-            Palitan ang email address sa code ng sarili mong email.
+    <section class="section activity" id="schedule">
+      <p class="eyebrow">PROJECT 01</p>
+      <h2>Class <span>Schedule</span></h2>
+      <div class="table-wrap">
+        <table>
+          <tr><th colspan="4">CLASS SCHEDULE</th></tr>
+          <tr><th colspan="4">Face-to-Face</th></tr>
+          <tr><td colspan="2"><b>NAME:</b> JAYAN, MIA L.</td><td colspan="2"><b>YEAR LEVEL:</b> 2nd year</td></tr>
+          <tr><td colspan="4"><b>SECTION:</b> BSIT 21007</td></tr>
+          <tr><th>DAY</th><th>TIME</th><th>SUBJECT</th><th>INSTRUCTOR</th></tr>
+          <tr><td>MONDAY</td><td>6:00 AM - 8:30 AM</td><td>SOSLIT (SOSYEDAD AT LITERATURA)</td><td>Mr. Retchie Fernan</td></tr>
+          <tr><td>MONDAY</td><td>10:30 AM - 12:30 PM</td><td>PE3 (INDIVIDUAL AND DUAL SPORT)</td><td>Ms. Rose Ann Icaoanapo</td></tr>
+          <tr><td>WEDNESDAY</td><td>6:00 AM - 8:30 AM</td><td>IPT101 (INTEGRATIVE PROGRAMMING AND TECHNOLOGIES 1)</td><td>Mr. Romel Cabiling</td></tr>
+          <tr><td>WEDNESDAY</td><td>8:30 AM - 10:30 AM</td><td>ITE1 (IT ELECTIVE 1 - WEB FUNDAMENTAL)</td><td>Ms. Marifel J. Laynesa</td></tr>
+          <tr><td>WEDNESDAY</td><td>10:30 AM - 12:30 PM</td><td>CC104 (DATA STRUCTURES AND ALGORITHMS)</td><td>Mr. Jayboy Colo</td></tr>
+          <tr><td>FRIDAY</td><td>6:00 AM - 8:30 AM</td><td>MS102 (QUANTITATIVE METHODS WITH MODELLING SIMULATION)</td><td>Mr. Caesar Canlas</td></tr>
+          <tr><td>FRIDAY</td><td>8:30 AM - 10:30 AM</td><td>HCI 101 (INTRODUCTION TO HUMAN COMPUTER INTERACTION)</td><td>Ms. Regane Macahibag</td></tr>
+          <tr><td>FRIDAY</td><td>10:30 AM - 12:30 PM</td><td>NET 101 (NETWORKING 1)</td><td>Mr. Aldrene De Guzman</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="section activity" id="inline-block">
+      <p class="eyebrow">PROJECT 02</p>
+      <h2>Inline and <span>Block</span></h2>
+      <div class="demo-card">
+        <h3>Block Elements</h3>
+        <div class="block-demo">This is a block element</div>
+        <div class="block-demo">This is another block element</div>
+        <h3>Inline Elements</h3>
+        <p class="inline-demo">Inline one</p>
+        <p class="inline-demo">Inline two</p>
+        <p class="inline-demo">Inline three</p>
+      </div>
+    </section>
+
+    <section class="section activity" id="multimedia">
+      <p class="eyebrow">PROJECT 03</p>
+      <h2>HTML <span>Multimedia</span></h2>
+      <div class="media-card">
+        <h3>Sample Video</h3>
+        <video controls playsinline preload="metadata">
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          Your browser does not support video.
+        </video>
+        <h3>Sample Audio</h3>
+        <audio controls preload="metadata">
+          <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+    </section>
+
+    <section class="section activity" id="transform">
+      <p class="eyebrow">PROJECT 04</p>
+      <h2>Transform <span>& Transition</span></h2>
+      <p class="section-intro">Tap or hover over the boxes to see the effects.</p>
+      <div class="transform-grid">
+        <div class="transform-card"><h3>Before</h3><div class="box-demo translate">BOX</div><p>Translate</p></div>
+        <div class="transform-card"><h3>Before</h3><div class="box-demo rotate">BOX</div><p>Rotate</p></div>
+        <div class="transform-card"><h3>Before</h3><div class="box-demo scale">BOX</div><p>Scale</p></div>
+        <div class="transform-card"><h3>Before</h3><div class="box-demo skew">BOX</div><p>Skew</p></div>
+      </div>
+    </section>
+
+    <section class="section activity" id="teachers-day">
+      <p class="eyebrow">PROJECT 05</p>
+      <h2>Happy <span>Teachers' Day!</span></h2>
+      <div class="teachers-card">
+        <div class="flower">💐🌷💐</div>
+        <h3>Thank You, Dear Teachers!</h3>
+        <p>
+          Thank you for your patience, guidance, and dedication.
+          Your lessons inspire us to learn, grow, and work toward
+          our dreams. We appreciate everything you do!
         </p>
+        <p class="signature">With love and gratitude, JAYAN, MIA L.</p>
+      </div>
     </section>
-</main>
 
-<footer>
-    <p>© 2026 My Portfolio | Created by JAYAN, MIA L.</p>
-</footer>
+    <section class="section contact" id="contact">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2>Say <span>Hello!</span></h2>
+      <p>Thank you for visiting my portfolio.</p>
+      <a class="btn primary" href="mailto:hello@example.com">Contact Me</a>
+      <p class="small-note">Replace hello@example.com with your own email address.</p>
+    </section>
+  </main>
 
-<script>
-    const menuButton = document.getElementById("menuButton");
-    const navMenu = document.getElementById("navMenu");
-    const themeButton = document.getElementById("themeButton");
-
-    menuButton.addEventListener("click", function () {
-        navMenu.classList.toggle("show");
-        const isOpen = navMenu.classList.contains("show");
-        menuButton.setAttribute("aria-expanded", isOpen);
-        menuButton.textContent = isOpen ? "✕" : "☰";
-    });
-
-    navMenu.querySelectorAll("a").forEach(function (link) {
-        link.addEventListener("click", function () {
-            navMenu.classList.remove("show");
-            menuButton.textContent = "☰";
-            menuButton.setAttribute("aria-expanded", "false");
-        });
-    });
-
-    themeButton.addEventListener("click", function () {
-        document.body.classList.toggle("dark-mode");
-        themeButton.textContent =
-            document.body.classList.contains("dark-mode") ? "☀" : "☾";
-    });
-</script>
+  <footer>
+    <a class="logo" href="#home">JM<span>.</span></a>
+    <p>Made with HTML and CSS by JAYAN, MIA L.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
 
 </body>
 </html>
